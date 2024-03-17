@@ -135,9 +135,7 @@ manifestContent.replaceAll("  ", " ")
 manifestOutFile.write(manifestContent)
 
 android {
-  if(shouldUseNameSpace){
-    namespace = "com.reactnativecommunity.cameraroll"
-  }
+  namespace = "com.reactnativecommunity.cameraroll"
   compileSdkVersion getExtOrIntegerDefault('compileSdkVersion')
 
     // Used to override the NDK path/version on internal CI or by allowing
